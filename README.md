@@ -15,6 +15,8 @@ sudo apt install sqlite3
 
 
 ```
+
+```
 git clone https://github.com/networkdavit/factom.git
 cd factom
 pip install -r requirements.txt
