@@ -43,8 +43,8 @@ def generate_a_fact():
     conn = get_db_connection()
     random_fact = conn.execute("SELECT * FROM facts").fetchall()
     conn.close()
-    data_to_send = {random_fact[random_key][2]:random_fact[random_key][3]}
-    print(data_to_send)
+    data_to_send = {"fact_number":random_fact[random_key][2],
+                    "content": random_fact[random_key][3]}
     json_data_to_send = json.dumps(data_to_send)
     return f"{json_data_to_send}"
 
