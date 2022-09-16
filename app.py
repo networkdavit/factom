@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 import sqlite3
 import random
 import json
@@ -6,6 +7,7 @@ import json
 
 connection = sqlite3.connect('database.db')
 app = Flask(__name__)
+CORS(app)
 
 facts_list = []
 with open('facts.txt') as my_file:
