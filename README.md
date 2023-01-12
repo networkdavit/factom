@@ -1,8 +1,5 @@
 # factom API
 
-To access a random fact, simply visit https://factom.onrender.com/fact
-
-
 ## If you want to run this locally
 
 ### You need python3 and sqlite
